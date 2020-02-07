@@ -1,0 +1,16 @@
+.bb {
+	color: #DDDDDD;
+	background-color: #555555;
+}
+
+.gg {
+	color: #333333;
+	background-color: #AAAAAA;
+}
+
+.front {
+	z-index: 1;
+}
+.back {
+	z-index: -1;
+}
