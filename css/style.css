@@ -12,6 +12,7 @@ html {
 	scroll-behavior: smooth;
 }
 
+/*
 @font-face {
 	font-family: "Merienda";
 	src: url("/fonts/merienda.ttf" format("truetype"))
@@ -21,11 +22,12 @@ html {
 	font-family: "Ackaisyo";
 	src: url("/fonts/ackaisyo.ttf" format("truetype"))
 }
+*/
 
 body {
 	color: #D5D5D5;
 	background-color: #151515;
-	font-family: 'Merienda';
+	font-family: 'Merienda', cursive;
 }
 
 li {
