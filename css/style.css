@@ -255,7 +255,7 @@ li {
 }
 
 /* Phone Style (LARGE) */
-@media screen and (max-aspect-ratio: 1920/2800) and (min-height: 1200px) {
+@media screen and (max-aspect-ratio: 1080/1920) and (min-height: 1334px) {
 	.video-container > video {
 		height: 100%;
 	}
@@ -281,7 +281,7 @@ li {
 	}
 }
 /* Phone Style (NORMAL) */
-@media screen and (max-aspect-ratio: 1920/2800) and (max-height: 1200px) {
+@media screen and (max-aspect-ratio: 1080/1920) and (max-height: 1334px) {
 	.video-container > video {
 		height: 100%;
 	}
