@@ -14,12 +14,12 @@ html {
 
 @font-face {
 	font-family: "Merienda";
-	src: url("/fonts/merienda.ttf" format("ttf"))
+	src: url("/fonts/merienda.ttf" format("truetype"))
 }
 
 @font-face {
 	font-family: "Ackaisyo";
-	src: url("/fonts/ackaisyo.ttf" format("ttf"))
+	src: url("/fonts/ackaisyo.ttf" format("truetype"))
 }
 
 body {
