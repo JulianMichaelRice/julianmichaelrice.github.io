@@ -1,6 +1,6 @@
-<html>
+<html lang="en">
 	<head>
-		<title>Shujinkou</title>
+		<title>Shujinkou: Official Website</title>
 		<!--Import Google Icon Font-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<!--Import materialize.css & styles-->
@@ -8,13 +8,31 @@
 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="icon" href="images/icon.png">
+		<meta name="description" content="Recover and use Japanese to save the world from the Akuma. Official website for Shujinkou, coming to the Nintendo Switch, Playstation 4, and PC.">
+		<link rel="canonical" href="https://www.shujinkou.net">
 	</head>
 	<body class="scroll">
 		<!-- Navigation Bar -->
-		<div style="position: absolute;">
-			<a href="https://www.ricegames.net" target="_blank" class="shake-2">
-				<img src="images/logo.png" width="140px"  style="padding: 10px;">
+		<div style="position: absolute; width: 100%">
+			<a href="https://www.ricegames.net" target="_blank">
+				<img src="images/logo.png" width="140px"  style="padding: 10px;" class="shake-2">
 			</a>
+			
+			<div style="top: 0%; right:0%; position: inherit; padding: 10px">
+				<a href="https://www.ricegames.net" target="_blank">
+					<img src="images/facebook.png" width="40px"  style="padding: 2px;" class="shake-2">
+				</a>
+				<a href="https://www.ricegames.net" target="_blank">
+					<img src="images/instagram.png" width="40px"  style="padding: 2px;" class="shake-2">
+				</a>
+				<a href="https://www.ricegames.net" target="_blank">
+					<img src="images/twitter.png" width="40px"  style="padding: 2px;" class="shake-2">
+				</a>
+				<a href="https://www.ricegames.net" target="_blank">
+					<img src="images/linkedin.png" width="40px"  style="padding: 2px;" class="shake-2">
+				</a>
+			</div>
 		</div>
 		
 		<!-- Section 0: Main Screen -->
@@ -42,24 +60,34 @@
 		
 		<!-- Section 1: Quell the Akuma -->
 		<div class="spacer" id="savior"></div>
-		<div class="row" style="height: 100%;">
-			<div class="col s1">
+		<div class="row center">
+			<div class="col s3">
+				<a href="#akuma" class="shu">The Akuma Are Here</a>
 			</div>
-			<div class="col s10">
-				<div class="container-fluid bb">
+			<div class="col s3">
+				<a href="#heroes" class="shu">Meet Your Heroes</a>
+			</div>
+			<div class="col s3">
+				<a href="#npcs" class="shu">An Unpredecented Cast</a>
+			</div>
+			<div class="col s3">
+				<a href="#enemies" class="shu">Take Up Your Sword</a>
+			</div>
+		</div>
+		<div class="row" style="height: 100%;">
+			<div class="col s12">
+				<div class="container-fluid bb" id="akuma">
 					<h5 class="center">The Akuma Are Here</h5>
 				</div>
-				<div class="container-fluid gg">
+				<div class="container-fluid gg" id="heroes">
 					<h5 class="center">Meet Your Heroes</h5>
 				</div>
-				<div class="container-fluid bb">
-					<h5 class="center">Forge Everlasting Bonds</h5>
+				<div class="container-fluid bb" id="npcs">
+					<h5 class="center">An Unpredecented Cast</h5>
 				</div>
-				<div class="container-fluid gg">
-					<h5 class="center">Approach Enemies with Boldness</h5>
+				<div class="container-fluid gg" id="enemies">
+					<h5 class="center">Take Up Your Sword</h5>
 				</div>
-			</div>
-			<div class="col s1">
 			</div>
 		</div>
 		
@@ -68,30 +96,30 @@
 		<div class="container-fluid">
 			<div class="row" style="height: 100%">
 				<div class="col s3">
-					<div class="container-fluid gg">
+					<div class="container-fluid">
 						<ul>
-							<li>Hiragana, Katakana, Kanji</li>
-							<li>Verbs, Adjectives</li>
-							<li>Adjectives</li>
-							<li>Phrases &amp; Reading the Air</li>
-							<li>Minigames</li>
+							<li><a href="#kanas" class="jin">Learn Hiragana, Katakana, and Kanji</a></li>
+							<li><a href="#verbs" class="jin">Learn Verbs and Adjectives</a></li>
+							<li><a href="#words" class="jin">Learn Useful Words &amp; More</a></li>
+							<li><a href="#phrases" class="jin">Learn Phrases &amp; Reading the Air</a></li>
+							<li><a href="#minigames" class="jin">Learn More with Minigames</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col s9">
-					<div class="container-fluid gg">
+					<div class="container-fluid gg" id="kanas">
 						<h5 class="center">Learn Hiragana, Katakana, and Kanji</h5>
 					</div>
-					<div class="container-fluid bb">
+					<div class="container-fluid bb" id="verbs">
 						<h5 class="center">Learn Verbs and Adjectives</h5>
 					</div>
-					<div class="container-fluid gg">
+					<div class="container-fluid gg" id="words">
 						<h5 class="center">Learn Useful Words &amp; More</h5>
 					</div>
-					<div class="container-fluid bb">
+					<div class="container-fluid bb" id="phrases">
 						<h5 class="center">Learn Phrases &amp; Reading the Air</h5>
 					</div>
-					<div class="container-fluid gg">
+					<div class="container-fluid gg" id="minigames">
 						<h5 class="center">Learn More with Minigames</h5>
 					</div>
 				</div>
@@ -101,40 +129,41 @@
 			<div class="spacer" id="adventurer"></div>
 			<div class="row" style="height: 100%">
 				<div class="col s9">
-					<div class="container-fluid bb">
+					<div class="container-fluid bb" id="labyrinth">
 						<h5 class="center">Grandiose 3D Dungeons</h5>
 					</div>
-					<div class="container-fluid gg">
+					<div class="container-fluid gg" id="battle">
 						<h5 class="center">Immersive Battle System</h5>
 					</div>
-					<div class="container-fluid bb">
+					<div class="container-fluid bb" id="towns">
 						<h5 class="center">Expansive Towns &amp; Facilities</h5>
 					</div>
-					<div class="container-fluid gg">
+					<div class="container-fluid gg" id="bonding">
 						<h5 class="center">A Massive Bonding System</h5>
 					</div>
-					<div class="container-fluid bb">
+					<div class="container-fluid bb" id="bosses">
 						<h5 class="center">Towering Bosses &amp; The Alignment System</h5>
 					</div>
 				</div>
 				<div class="col s3">
-					<div class="container-fluid gg" style="text-align: right">
+					<div class="container-fluid" style="text-align: right">
 						<ul>
-							<li>Grandiose 3D Dungeons</li>
-							<li>Immersive Battle System</li>
-							<li>Expansive Towns &amp; Facilities</li>
-							<li>A Massive Bonding System</li>
-							<li>Towering Bosses &amp; The Alignment System</li>
+							<li><a href="#labyrinth" class="kou">Grandiose 3D Dungeons</a></li>
+							<li><a href="#battle" class="kou">Immersive Battle System</a></li>
+							<li><a href="#towns" class="kou">Expansive Towns &amp; Facilities</a></li>
+							<li><a href="#bonding" class="kou">A Massive Bonding System</a></li>
+							<li><a href="#bosses" class="kou">Towering Bosses &amp; The Alignment System</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			
 			<!-- Section 4: Updates & Social Media -->
-			
-			
-			
-			
+			<div style="height: 100%; background-color: #212121">
+				<div class="container-fluid">
+					<h5 class="center">Follow Us For Updates</h5>
+				</div>
+			</div>	
 		</div>
 		<!--JavaScript at end of body for optimized loading-->
 		<script type="text/javascript" src="js/materialize.min.js"></script>

@@ -12,11 +12,58 @@ html {
 	scroll-behavior: smooth;
 }
 
+@font-face {
+	font-family: "Merienda";
+	src: url("/fonts/merienda.ttf" format("ttf"))
+}
+
+@font-face {
+	font-family: "Ackaisyo";
+	src: url("/fonts/ackaisyo.ttf" format("ttf"))
+}
+
 body {
 	color: #D5D5D5;
 	background-color: #151515;
+	font-family: 'Merienda';
 }
 
+li {
+	padding: 15px 20px;
+}
+
+/* CHARACTER COLORS */
+.shu {
+	line-height: 25px;
+	color: #CC4433;
+}
+
+.shu:hover {
+	color: #CC6655;
+}
+
+.jin {
+	line-height: 25px;
+	color: #44CC33;
+}
+
+.jin:hover {
+	color: #44DD55;
+}
+
+.kou {
+	line-height: 25px;
+	color: #9955CC;
+}
+
+.kou:hover {
+	color: #AA66CC;
+}
+/* ------------------------ */
+.container-fluid {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 .spacer {
 	margin-top: 5%;
 	margin-bottom: 5%;
