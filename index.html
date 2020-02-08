@@ -9,85 +9,133 @@
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="container">
-				<div class="front">
-					<h1 class="center">Shujinkou</h1>
-					<img src="images/game_logo.png" class="responsive-img">
-				</div>
+	<body class="scroll">
+		<!-- Navigation Bar -->
+		<div style="position: absolute;">
+			<a href="https://www.ricegames.net" target="_blank" class="shake-2">
+				<img src="images/logo.png" width="140px"  style="padding: 10px;">
+			</a>
+		</div>
+		
+		<!-- Section 0: Main Screen -->
+		<div class="container-fluid" style="height: 100%">
+			<div class="container z_front">
+				<img src="images/game_logo.png" class="responsive-img logo-center shake">
 			</div>
-			<div class="back">
-				<video autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;"  preload="auto" id="myVideo" style="width: 100%;">
-					<source src="videos/ks.mp4" type="video/mp4">
+			<div class="button-row" style="height: inherit">
+				<a href="#savior" class="button-item btn-large waves-effect waves-red red darken-3 shake-2">
+					Quell the Akuma
+				</a>
+				<a href="#learner" class="button-item-c btn-large waves-effect waves-green green darken-3 shake-2">
+					Recover Japanese
+				</a>
+				<a href="#adventurer" class="button-item btn-large waves-effect waves-purple purple darken-2 shake-2">
+					Linguistic Gameplay
+				</a>
+			</div>
+			<div class="z_back video-container">
+				<video autoplay="autoplay" loop="loop" muted defaultMuted playsinline oncontextmenu="return false;"  preload="auto" id="myVideo">
+					<source src="videos/ks.mp4" type="video/mp4" class="my_simple_center">
 				</video>
 			</div>
 		</div>
 		
-		<!-- Section 1: Learning Japanese -->
-		<div class="row">
-			<div class="col s3">
+		<!-- Section 1: Quell the Akuma -->
+		<div class="spacer" id="savior"></div>
+		<div class="row" style="height: 100%;">
+			<div class="col s1">
+			</div>
+			<div class="col s10">
+				<div class="container-fluid bb">
+					<h5 class="center">The Akuma Are Here</h5>
+				</div>
 				<div class="container-fluid gg">
-					<ul>
-						<li>Hiragana, Katakana, Kanji</li>
-						<li>Verbs, Adjectives</li>
-						<li>Adjectives</li>
-						<li>Phrases &amp; Reading the Air</li>
-						<li>Minigames</li>
-					</ul>
+					<h5 class="center">Meet Your Heroes</h5>
+				</div>
+				<div class="container-fluid bb">
+					<h5 class="center">Forge Everlasting Bonds</h5>
+				</div>
+				<div class="container-fluid gg">
+					<h5 class="center">Approach Enemies with Boldness</h5>
 				</div>
 			</div>
-			<div class="col s9">
-				<div class="container-fluid gg">
-					<h5 class="center">Learn Hiragana, Katakana, and Kanji</h5>
-				</div>
-				<div class="container-fluid bb">
-					<h5 class="center">Learn Verbs and Adjectives</h5>
-				</div>
-				<div class="container-fluid gg">
-					<h5 class="center">Learn Useful Words &amp; More</h5>
-				</div>
-				<div class="container-fluid bb">
-					<h5 class="center">Learn Phrases &amp; Reading the Air</h5>
-				</div>
-				<div class="container-fluid gg">
-					<h5 class="center">Learn More with Minigames</h5>
-				</div>
+			<div class="col s1">
 			</div>
 		</div>
 		
-		<!-- Section 2: Saving the World -->
-		<div class="row">
-			<div class="col s9">
-				<div class="container-fluid bb">
-					<h5 class="center">Explore Grandiose Dungeons</h5>
+		<!-- Section 2: Recover Japanese -->
+		<div class="spacer" id="learner"></div>
+		<div class="container-fluid">
+			<div class="row" style="height: 100%">
+				<div class="col s3">
+					<div class="container-fluid gg">
+						<ul>
+							<li>Hiragana, Katakana, Kanji</li>
+							<li>Verbs, Adjectives</li>
+							<li>Adjectives</li>
+							<li>Phrases &amp; Reading the Air</li>
+							<li>Minigames</li>
+						</ul>
+					</div>
 				</div>
-				<div class="container-fluid gg">
-					<h5 class="center">Immersive Battle System</h5>
-				</div>
-				<div class="container-fluid bb">
-					<h5 class="center">Expansive Towns &amp; Facilities</h5>
-				</div>
-				<div class="container-fluid gg">
-					<h5 class="center">A Massive Bonding System</h5>
-				</div>
-				<div class="container-fluid bb">
-					<h5 class="center">Towering Bosses &amp; The Alignment System</h5>
+				<div class="col s9">
+					<div class="container-fluid gg">
+						<h5 class="center">Learn Hiragana, Katakana, and Kanji</h5>
+					</div>
+					<div class="container-fluid bb">
+						<h5 class="center">Learn Verbs and Adjectives</h5>
+					</div>
+					<div class="container-fluid gg">
+						<h5 class="center">Learn Useful Words &amp; More</h5>
+					</div>
+					<div class="container-fluid bb">
+						<h5 class="center">Learn Phrases &amp; Reading the Air</h5>
+					</div>
+					<div class="container-fluid gg">
+						<h5 class="center">Learn More with Minigames</h5>
+					</div>
 				</div>
 			</div>
-			<div class="col s3">
-				<div class="container-fluid gg" style="text-align: right">
-					<ul>
-						<li>Hiragana, Katakana, Kanji</li>
-						<li>Verbs, Adjectives</li>
-						<li>Adjectives</li>
-						<li>Phrases &amp; Reading the Air</li>
-						<li>Minigames</li>
-					</ul>
+
+			<!-- Section 3: Linguistic Gameplay -->
+			<div class="spacer" id="adventurer"></div>
+			<div class="row" style="height: 100%">
+				<div class="col s9">
+					<div class="container-fluid bb">
+						<h5 class="center">Grandiose 3D Dungeons</h5>
+					</div>
+					<div class="container-fluid gg">
+						<h5 class="center">Immersive Battle System</h5>
+					</div>
+					<div class="container-fluid bb">
+						<h5 class="center">Expansive Towns &amp; Facilities</h5>
+					</div>
+					<div class="container-fluid gg">
+						<h5 class="center">A Massive Bonding System</h5>
+					</div>
+					<div class="container-fluid bb">
+						<h5 class="center">Towering Bosses &amp; The Alignment System</h5>
+					</div>
+				</div>
+				<div class="col s3">
+					<div class="container-fluid gg" style="text-align: right">
+						<ul>
+							<li>Grandiose 3D Dungeons</li>
+							<li>Immersive Battle System</li>
+							<li>Expansive Towns &amp; Facilities</li>
+							<li>A Massive Bonding System</li>
+							<li>Towering Bosses &amp; The Alignment System</li>
+						</ul>
+					</div>
 				</div>
 			</div>
+			
+			<!-- Section 4: Updates & Social Media -->
+			
+			
+			
+			
 		</div>
-		
 		<!--JavaScript at end of body for optimized loading-->
 		<script type="text/javascript" src="js/materialize.min.js"></script>
 	</body>

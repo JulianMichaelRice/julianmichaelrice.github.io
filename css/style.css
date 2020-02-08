@@ -8,9 +8,252 @@
 	background-color: #AAAAAA;
 }
 
-.front {
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: #D5D5D5;
+	background-color: #151515;
+}
+
+.spacer {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.z_front {
 	z-index: 1;
 }
-.back {
-	z-index: -1;
+.z_back {
+	z-index: -100;
+}
+.z_back-2 {
+	z-index: -200;
+}
+.traditional-center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.my_simple_center {
+	display: block;
+	margin: 0 auto;
+}
+
+.scroll {
+	-ms-overflow-style: none;
+}
+.scroll::-webkit-scrollbar {
+	display: none;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+.video-container > video {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -100;
+}
+
+.shake {
+	animation: shaky 4s;
+	animation-iteration-count: infinite;
+}
+
+.shake-2 {
+	animation: shaky 5.5s;
+	animation-iteration-count: infinite;
+	opacity: 1.0;
+}
+
+.shake:hover {
+	animation: zoom 4.5s;
+	animation-iteration-count: infinite;
+}
+
+.shake-2:hover {
+	animation: zoom 6s;
+	animation-iteration-count: infinite;
+	opacity: 0.8;
+	cursor: alias;
+}
+
+
+@keyframes shaky {
+/*	0% { transform: translate(0px, 0px) rotate(0deg); }*/
+/*	12.5% { transform: translate(0px, 5px) rotate(0deg); }*/
+	25% { transform: translate(0px, 3px) rotate(0deg); }
+/*	37.5% { transform: translate(0px, -5px) rotate(0deg); }*/
+	50% { transform: translate(0px, -3px) rotate(0deg); }
+/*	62.5% { transform: translate(0px, 5px) rotate(0deg); }*/
+	75% { transform: translate(0px, 3px) rotate(0deg); }
+/*	87.5% { transform: translate(0px, -5px) rotate(0deg); }*/
+	100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+.button-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.btn-large {
+	border-radius: 7px;
+}
+
+@keyframes zoom {
+	50% { transform: scaleX(1.05) scaleY(1.05); }
+	100% { transform: scaleX(1) scaleY(1); }
+}
+
+/* Wide Style */
+@media screen and (min-aspect-ratio: 1920/1200) {
+	.video-container > video {
+		width: 100%;
+	}
+	.logo-center {
+		position: absolute;
+		left: 55%;
+		top: 55%;
+		width: 45%;
+		height: auto;
+		margin-left: -27.5%; /* Half the width */
+		margin-top: -27.5%;
+	}
+	.button-item {
+		margin-bottom: 10%;
+	}
+	.button-item-c {
+		margin-bottom: 2%;
+	}
+}
+
+/* Tablet */
+@media screen and (max-aspect-ratio: 1920/1200) {
+	.video-container > video {
+		height: 100%;
+	}
+	.logo-center {
+		position: absolute;
+		left: 40%;
+		top: 35%;
+		width: 60%;
+		height: auto;
+		margin-left: -20%; /* Half the width */
+		margin-top: -20%;
+	}
+	.button-item {
+		margin-bottom: 20%;
+	}
+	.button-item-c {
+		margin-bottom: 2%;
+	}
+}
+
+/* Tablet x Phone Style */
+@media screen and (max-aspect-ratio: 1920/1440) {
+	.video-container > video {
+		height: 100%;
+	}
+	.logo-center {
+		position: absolute;
+		left: 40%;
+		top: 30%;
+		width: 60%;
+		height: auto;
+		margin-left: -20%; /* Half the width */
+		margin-top: -20%;
+	}
+	.button-item {
+		margin-bottom: 25%;
+	}
+	.button-item-c {
+		margin-bottom: 10%;
+	}
+}
+
+/* Square Style */
+@media screen and (max-aspect-ratio: 1920/1920) {
+	.video-container > video {
+		height: 100%;
+	}
+	.logo-center {
+		position: absolute;
+		left: 35%;
+		top: 30%;
+		width: 65%;
+		height: auto;
+		margin-left: -17.5%; /* Half the width */
+		margin-top: -17.5%;
+	}
+	.button-item {
+		margin-bottom: 35%;
+	}
+	.button-item-c {
+		margin-bottom: 25%;
+	}
+}
+
+/* Phone Style (LARGE) */
+@media screen and (max-aspect-ratio: 1920/2800) and (min-height: 1200px) {
+	.video-container > video {
+		height: 100%;
+	}
+	.logo-center {
+		position: absolute;
+		left: 25%;
+		top: 25%;
+		width: 75%;
+		height: auto;
+		margin-left: -12.5%; /* Half the width */
+		margin-top: -12.5%;
+	}
+
+	.button-row {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		margin-bottom: 10%;
+	}
+	.button-item, .button-item-c {
+		margin-bottom: 12.5%;
+	}
+}
+/* Phone Style (NORMAL) */
+@media screen and (max-aspect-ratio: 1920/2800) and (max-height: 1200px) {
+	.video-container > video {
+		height: 100%;
+	}
+	.logo-center {
+		position: absolute;
+		left: 25%;
+		top: 25%;
+		width: 75%;
+		height: auto;
+		margin-left: -12.5%; /* Half the width */
+		margin-top: -12.5%;
+	}
+
+	.button-row {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		margin-bottom: 10%;
+	}
+	.button-item, .button-item-c {
+		margin-bottom: 5%;
+	}
 }
