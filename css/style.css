@@ -254,8 +254,12 @@ li {
 	}
 }
 
+.screenshot {
+	border: 3px solid black;
+}
+
 /* Phone Style (LARGE) */
-@media screen and (max-aspect-ratio: 1080/1920) and (min-height: 1334px) {
+@media screen and (max-aspect-ratio: 1080/1920) and (min-height: 1000px) {
 	.video-container > video {
 		height: 100%;
 	}
@@ -281,7 +285,7 @@ li {
 	}
 }
 /* Phone Style (NORMAL) */
-@media screen and (max-aspect-ratio: 1080/1920) and (max-height: 1334px) {
+@media screen and (max-aspect-ratio: 1080/1920) and (max-height: 1000px) {
 	.video-container > video {
 		height: 100%;
 	}
