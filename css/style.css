@@ -1,6 +1,23 @@
 .bb {
 	color: #DDDDDD;
-	background-color: #555555;
+/*	background-color: #FFFFFF;*/
+	background-image: url("../images/Full%20GK%20Night%20BG.jpg");
+	background-repeat: repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.ss {
+	color: #DDDDDD;
+/*	background-color: #FFFFFF;*/
+	background-image: url("../images/sanrin-dark.jpg");
+	background-repeat: repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.bb2 {
+	background-color: #091527;
 }
 
 .gg {
