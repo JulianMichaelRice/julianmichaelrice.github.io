@@ -10,6 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="icon" href="images/icon.png">
 		<link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<meta name="description" content="Recover and use Japanese to save the world from the Akuma. Official website for Shujinkou, coming to the Nintendo Switch, Playstation 4, and PC.">
 		<link rel="canonical" href="https://www.shujinkou.net">
 	</head>
@@ -58,240 +59,256 @@
 				</video>
 			</div>
 		</div>
-		
-		<!-- Section 1: Quell the Akuma -->
-		<div class="spacer" id="savior"></div>
-		
-		<!-- Standard Version -->
-		<div class="hide-on-small-only bb" style="display: inline-block;">
-			<div class="row center">
-				<div class="col s6">
-					<a href="#akuma" class="shu">The Akuma Are Here</a>
-				</div>
-				<div class="col s6">
-					<a href="#npcs" class="shu">An Unpredecented Cast</a>
-				</div>
-			</div>
-			<div class="row" style="height: 100%;">
-				<div class="col s12">
-					<div class="container-fluid bb2" id="akuma" style="width: 103%">
-						<img src="images/SJK-Web-1_S.png" width="70%" class="center-block">
-					</div>
-					<div class="container-fluid bb" id="npcs" style="width: 103%">
-						<img src="images/SJK-Web-2_S.png" width="70%" class="center-block">
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<!-- Mobile Version -->
-		<div class="hide-on-med-and-up">
-			<div class="row" style="height: 100%;">
-				<div class="col s12">
-					<div class="container-fluid bb" id="akuma">
-						<h5 class="center">The Akuma Are Here</h5>
-					</div>
-					<div class="container-fluid gg" id="heroes">
-						<h5 class="center">Meet Your Heroes</h5>
-					</div>
-					<div class="container-fluid bb" id="npcs">
-						<h5 class="center">An Unpredecented Cast</h5>
-					</div>
-					<div class="container-fluid gg" id="enemies">
-						<h5 class="center">Take Up Your Sword</h5>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<!-- Section 2: Recover Japanese -->
-		<div class="spacer" id="learner"></div>
-		<div class="container-fluid">
-			
+		<div class="">
+			<!-- Section 1: Quell the Akuma -->
+			<div class="spacer" id="savior"></div>
+
 			<!-- Standard Version -->
-			<div class="row hide-on-small-only" style="height: 100%">	
-				<div class="col s3">
-					<div class="container-fluid">
-						<ul>
-							<li><a href="#kanas" class="jin">Learn Hiragana, Katakana, and Kanji</a></li>
-							<li><a href="#verbs" class="jin">Learn Verbs and Adjectives</a></li>
-							<li><a href="#words" class="jin">Learn Useful Words &amp; More</a></li>
-							<li><a href="#phrases" class="jin">Learn Phrases &amp; Reading the Air</a></li>
-							<li><a href="#minigames" class="jin">Learn More with Minigames</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col s9">
-					<div class="container-fluid gg" id="kanas">
-						<h5 class="center">Learn Hiragana, Katakana, and Kanji</h5>
-					</div>
-					<div class="container-fluid ss" id="verbs">
-						<img src="images/SJK-Web-VerbTypes.png" width="90%" class="center-block">
-					</div>
-					<div class="container-fluid gg" id="words">
-						<h5 class="center">Learn Useful Words &amp; More</h5>
-					</div>
-					<div class="container-fluid bb" id="phrases">
-						<h5 class="center">Learn Phrases &amp; Reading the Air</h5>
-					</div>
-					<div class="container-fluid gg" id="minigames">
-						<h5 class="center">Learn More with Minigames</h5>
-					</div>
-				</div>
-			</div>
-			
-			<!-- Mobile Version -->
-			<div class="row hide-on-med-and-up" style="height: 100%">
-				<div class="col s12">
-					<div class="container-fluid gg" id="kanas2">
-						<h5 class="center">Learn Hiragana, Katakana, and Kanji</h5>
-					</div>
-					<div class="container-fluid bb" id="verbs2">
-						<h5 class="center">Learn Verbs and Adjectives</h5>
-					</div>
-					<div class="container-fluid gg" id="words2">
-						<h5 class="center">Learn Useful Words &amp; More</h5>
-					</div>
-					<div class="container-fluid bb" id="phrases2">
-						<h5 class="center">Learn Phrases &amp; Reading the Air</h5>
-					</div>
-					<div class="container-fluid gg" id="minigames2">
-						<h5 class="center">Learn More with Minigames</h5>
+			<div class="hide-on-small-only container-fluid bb" style="display: inline-block;">
+				<div class="row">
+					<div class="col s12">
+						<div class="fadeInText" id="akuma" style="width: 100%">
+							<img src="images/SJK-Web-1_S.png" width="70%" class="center-block">
+						</div>
+						<div class="fadeInText" id="npcs" style="width: 100%">
+							<img src="images/SJK-Web-2_S.png" width="75%" class="center-block">
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<!-- Section 3: Linguistic Gameplay -->
-			<div class="spacer" id="adventurer"></div>
-			
-			<!-- Standard Version -->
-			<div class="row hide-on-small-only" style="height: 100%">
-				<div class="col s9">
-					<div class="container-fluid bb" id="labyrinth">
-						<h5 class="center">Grandiose 3D Dungeons</h5>
-						<!-- Typed Image Introducing the Dungeons -->
-						
-						<!-- Gallery for Dungeons (GIF / JPG) -->
-						<div class="row">
-							<div class="col s6">
-								<a href="images/screenshots/sanrin.png" target="_blank">
-									<img src="images/screenshots/sanrin.png" class="responsive-img screenshot">
-								</a>
-							</div>
-							<div class="col s6">
-								<a href="images/screenshots/sanrin.png" target="_blank">
-									<img src="images/screenshots/kouya-beta.jpg" class="responsive-img screenshot">
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="container-fluid gg" id="battle">
-						<h5 class="center">Immersive Battle System</h5>
-						<!-- Gallery for Dungeons (GIF / JPG) -->
-						<div class="row">
-							<div class="col s6">
-								<a href="images/screenshots/kouya-beta.jpg" target="_blank">
-									<img src="images/screenshots/sanrin.png" class="responsive-img screenshot">
-								</a>
-							</div>
-							<div class="col s6">
-								<a href="images/screenshots/kouya-beta.jpg" target="_blank">
-									<img src="images/screenshots/kouya-beta.jpg" class="responsive-img screenshot">
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="container-fluid bb" id="towns">
-						<h5 class="center">Expansive Towns &amp; Facilities</h5>
-						<!-- Gallery for Dungeons (GIF / JPG) -->
-						<div class="row">
-							<div class="col s6">
-								<a href="images/screenshots/kouya-beta.jpg" target="_blank">
-									<img src="images/screenshots/sanrin.png" class="responsive-img screenshot">
-								</a>
-							</div>
-							<div class="col s6">
-								<a href="images/screenshots/kouya-beta.jpg" target="_blank">
-									<img src="images/screenshots/kouya-beta.jpg" class="responsive-img screenshot">
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="container-fluid gg" id="bonding">
-						<h5 class="center">A Massive Bonding System</h5>
-						<!-- Gallery for Dungeons (GIF / JPG) -->
-						<div class="row">
-							<div class="col s6">
-								<a href="images/screenshots/kouya-beta.jpg" target="_blank">
-									<img src="images/screenshots/sanrin.png" class="responsive-img screenshot">
-								</a>
-							</div>
-							<div class="col s6">
-								<a href="images/screenshots/kouya-beta.jpg" target="_blank">
-									<img src="images/screenshots/kouya-beta.jpg" class="responsive-img screenshot">
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="container-fluid bb" id="bosses">
-						<h5 class="center">Towering Bosses &amp; The Alignment System</h5>
-						<!-- Gallery for Dungeons (GIF / JPG) -->
-						<div class="row">
-							<div class="col s6">
-								<a href="images/screenshots/kouya-beta.jpg" target="_blank">
-									<img src="images/screenshots/sanrin.png" class="responsive-img screenshot">
-								</a>
-							</div>
-							<div class="col s6">
-								<a href="images/screenshots/kouya-beta.jpg" target="_blank">
-									<img src="images/screenshots/kouya-beta.jpg" class="responsive-img screenshot">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col s3">
-					<div class="container-fluid" style="text-align: right">
-						<ul>
-							<li><a href="#labyrinth" class="kou">Grandiose 3D Dungeons</a></li>
-							<li><a href="#battle" class="kou">Immersive Battle System</a></li>
-							<li><a href="#towns" class="kou">Expansive Towns &amp; Facilities</a></li>
-							<li><a href="#bonding" class="kou">A Massive Bonding System</a></li>
-							<li><a href="#bosses" class="kou">Towering Bosses &amp; The Alignment System</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			
 			<!-- Mobile Version -->
-			<div class="row hide-on-med-and-up" style="height: 100%">
-				<div class="col s12">
-					<div class="container-fluid bb" id="labyrinth">
-						<h5 class="center">Grandiose 3D Dungeons</h5>
-					</div>
-					<div class="container-fluid gg" id="battle">
-						<h5 class="center">Immersive Battle System</h5>
-					</div>
-					<div class="container-fluid bb" id="towns">
-						<h5 class="center">Expansive Towns &amp; Facilities</h5>
-					</div>
-					<div class="container-fluid gg" id="bonding">
-						<h5 class="center">A Massive Bonding System</h5>
-					</div>
-					<div class="container-fluid bb" id="bosses">
-						<h5 class="center">Towering Bosses &amp; The Alignment System</h5>
+			<div class="hide-on-med-and-up">
+				<div class="row" style="height: 100%;">
+					<div class="col s12">
+						<div class="container-fluid" id="akuma">
+							<h5 class="center">The Akuma Are Here</h5>
+						</div>
+						<div class="container-fluid" id="heroes">
+							<h5 class="center">Meet Your Heroes</h5>
+						</div>
+						<div class="container-fluid" id="npcs">
+							<h5 class="center">An Unpredecented Cast</h5>
+						</div>
+						<div class="container-fluid" id="enemies">
+							<h5 class="center">Take Up Your Sword</h5>
+						</div>
 					</div>
 				</div>
 			</div>
-			
-			<!-- Section 4: Updates & Social Media -->
-			<div style="height: 100%; background-color: #212121">
-				<div class="container-fluid">
-					<h5 class="center">Follow Us For Updates</h5>
+
+			<!-- Section 2: Recover Japanese -->
+			<div class="spacer" id="learner"></div>
+			<div class="container-fluid">
+
+				<!-- Standard Version -->
+				<div class="row hide-on-small-only" style="height: 100%">	
+					<div class="col s3">
+						<div class="container-fluid">
+							<ul>
+								<li><a href="#kanas" class="jin">Learn Hiragana, Katakana, and Kanji</a></li>
+								<li><a href="#verbs" class="jin">Learn Verbs and Adjectives</a></li>
+								<li><a href="#words" class="jin">Learn Useful Words &amp; More</a></li>
+								<li><a href="#phrases" class="jin">Learn Phrases &amp; Reading the Air</a></li>
+								<li><a href="#minigames" class="jin">Learn More with Minigames</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col s9">
+						<div class="container-fluid" id="kanas">
+							<h5 class="center">Learn Hiragana, Katakana, and Kanji</h5>
+						</div>
+						<div class="container-fluid" id="verbs">
+							<img src="images/SJK-Web-VerbTypes.png" width="90%" class="center-block">
+						</div>
+						<div class="container-fluid" id="words">
+							<h5 class="center">Learn Useful Words &amp; More</h5>
+						</div>
+						<div class="container-fluid" id="phrases">
+							<h5 class="center">Learn Phrases &amp; Reading the Air</h5>
+						</div>
+						<div class="container-fluid" id="minigames">
+							<h5 class="center">Learn More with Minigames</h5>
+						</div>
+					</div>
 				</div>
-			</div>	
+
+				<!-- Mobile Version -->
+				<div class="row hide-on-med-and-up" style="height: 100%">
+					<div class="col s12">
+						<div class="container-fluid gg" id="kanas2">
+							<h5 class="center">Learn Hiragana, Katakana, and Kanji</h5>
+						</div>
+						<div class="container-fluid" id="verbs2">
+							<h5 class="center">Learn Verbs and Adjectives</h5>
+						</div>
+						<div class="container-fluid" id="words2">
+							<h5 class="center">Learn Useful Words &amp; More</h5>
+						</div>
+						<div class="container-fluid" id="phrases2">
+							<h5 class="center">Learn Phrases &amp; Reading the Air</h5>
+						</div>
+						<div class="container-fluid" id="minigames2">
+							<h5 class="center">Learn More with Minigames</h5>
+						</div>
+					</div>
+				</div>
+
+				<!-- Section 3: Linguistic Gameplay -->
+				<div class="spacer" id="adventurer"></div>
+
+				<!-- Standard Version -->
+				<div class="row hide-on-small-only" style="height: 100%">
+					<div class="col s9">
+						<div class="container-fluid" id="labyrinth">
+							<h5 class="center">Grandiose 3D Dungeons</h5>
+							<!-- Typed Image Introducing the Dungeons -->
+
+							<!-- Gallery for Dungeons (GIF / JPG) -->
+							<div class="row">
+								<div class="col s6">
+									<a href="images/screenshots/sanrin.png" target="_blank">
+										<img src="images/screenshots/sanrin.png" class="responsive-img screenshot">
+									</a>
+								</div>
+								<div class="col s6">
+									<a href="images/screenshots/sanrin.png" target="_blank">
+										<img src="images/screenshots/kouya-beta.jpg" class="responsive-img screenshot">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="container-fluid" id="battle">
+							<h5 class="center">Immersive Battle System</h5>
+							<!-- Gallery for Dungeons (GIF / JPG) -->
+							<div class="row">
+								<div class="col s6">
+									<a href="images/screenshots/kouya-beta.jpg" target="_blank">
+										<img src="images/screenshots/sanrin.png" class="responsive-img screenshot">
+									</a>
+								</div>
+								<div class="col s6">
+									<a href="images/screenshots/kouya-beta.jpg" target="_blank">
+										<img src="images/screenshots/kouya-beta.jpg" class="responsive-img screenshot">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="container-fluid" id="towns">
+							<h5 class="center">Expansive Towns &amp; Facilities</h5>
+							<!-- Gallery for Dungeons (GIF / JPG) -->
+							<div class="row">
+								<div class="col s6">
+									<a href="images/screenshots/kouya-beta.jpg" target="_blank">
+										<img src="images/screenshots/sanrin.png" class="responsive-img screenshot">
+									</a>
+								</div>
+								<div class="col s6">
+									<a href="images/screenshots/kouya-beta.jpg" target="_blank">
+										<img src="images/screenshots/kouya-beta.jpg" class="responsive-img screenshot">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="" id="bonding">
+							<h5 class="center">A Massive Bonding System</h5>
+							<!-- Gallery for Dungeons (GIF / JPG) -->
+							<div class="row">
+								<div class="col s6">
+									<a href="images/screenshots/kouya-beta.jpg" target="_blank">
+										<img src="images/screenshots/sanrin.png" class="responsive-img screenshot">
+									</a>
+								</div>
+								<div class="col s6">
+									<a href="images/screenshots/kouya-beta.jpg" target="_blank">
+										<img src="images/screenshots/kouya-beta.jpg" class="responsive-img screenshot">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="" id="bosses">
+							<h5 class="center">Towering Bosses &amp; The Alignment System</h5>
+							<!-- Gallery for Dungeons (GIF / JPG) -->
+							<div class="row">
+								<div class="col s6">
+									<a href="images/screenshots/kouya-beta.jpg" target="_blank">
+										<img src="images/screenshots/sanrin.png" class="responsive-img screenshot">
+									</a>
+								</div>
+								<div class="col s6">
+									<a href="images/screenshots/kouya-beta.jpg" target="_blank">
+										<img src="images/screenshots/kouya-beta.jpg" class="responsive-img screenshot">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col s3">
+						<div class="" style="text-align: right">
+							<ul>
+								<li><a href="#labyrinth" class="kou">Grandiose 3D Dungeons</a></li>
+								<li><a href="#battle" class="kou">Immersive Battle System</a></li>
+								<li><a href="#towns" class="kou">Expansive Towns &amp; Facilities</a></li>
+								<li><a href="#bonding" class="kou">A Massive Bonding System</a></li>
+								<li><a href="#bosses" class="kou">Towering Bosses &amp; The Alignment System</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Mobile Version -->
+				<div class="row hide-on-med-and-up" style="height: 100%">
+					<div class="col s12">
+						<div class="container-fluid" id="labyrinth">
+							<h5 class="center">Grandiose 3D Dungeons</h5>
+						</div>
+						<div class="container-fluid" id="battle">
+							<h5 class="center">Immersive Battle System</h5>
+						</div>
+						<div class="container-fluid" id="towns">
+							<h5 class="center">Expansive Towns &amp; Facilities</h5>
+						</div>
+						<div class="container-fluid" id="bonding">
+							<h5 class="center">A Massive Bonding System</h5>
+						</div>
+						<div class="container-fluid" id="bosses">
+							<h5 class="center">Towering Bosses &amp; The Alignment System</h5>
+						</div>
+					</div>
+				</div>
+
+				<!-- Section 4: Updates & Social Media -->
+				<div style="height: 100%;">
+					<div class="container-fluid">
+						<h5 class="center">Follow Us For Updates</h5>
+					</div>
+				</div>	
+			</div>
 		</div>
 		<!--JavaScript at end of body for optimized loading-->
 		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script>
+			(function(){
+
+			  var parallax = document.querySelectorAll(".bb"),
+				  speed = 0.4;
+
+			  window.onscroll = function(){
+				[].slice.call(parallax).forEach(function(el,i){
+
+				  var windowYOffset = window.pageYOffset,
+					  elBackgrounPos = "50% " + (windowYOffset * speed -350) + "px";
+
+				  el.style.backgroundPosition = elBackgrounPos;
+
+				});
+			  };
+
+			})();
+		</script>
+		<script>
+
+			
+		</script>
 	</body>
 </html>

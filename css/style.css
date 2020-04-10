@@ -1,10 +1,13 @@
 .bb {
 	color: #DDDDDD;
 /*	background-color: #FFFFFF;*/
-	background-image: url("../images/Full%20GK%20Night%20BG.jpg");
-	background-repeat: repeat;
-	background-position: center;
+/*	background-image: url("../images/Full%20GK%20Night%20BG.jpg");*/
+	background-image: url("../images/backlayerA.jpg");
+	background-repeat: no-repeat;
+/*	background-position: center;*/
 	background-size: cover;
+/*	background-attachment: fixed;*/
+	min-height: 2700px;
 }
 
 .ss {
@@ -18,6 +21,29 @@
 
 .bb2 {
 	background-color: #091527;
+	background-image: url("../images/backlayerA.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 1700px;
+}
+
+.hide {
+	opacity: 0;
+}
+
+@keyframes slideL {
+	0% { opacity: 0 }
+	100% { opacity: 1 }
+}
+
+.fadeIn {
+	animation: slideL ease 2.5s;
+}
+
+.container-fluid {
+	padding: 0; !important;
 }
 
 .gg {
@@ -43,7 +69,7 @@ html {
 
 body {
 	color: #D5D5D5;
-	background-color: #151515;
+	background-color: #000103;
 	font-family: 'Merienda', cursive;
 }
 
